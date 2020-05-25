@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ STATIC_URL }}/static/article.css">
+<title>
+{{ post.title }}
+</title>
+</head>
+<body>
+<div class="header">
+<img class="article-author" src="https://s-cdn.sportbox.ru/images/styles/upload/fp_fotos/9e/f2.." style="width: 200px">
+<h2 class="article-created-date"><a href="http://127.0.0.1:8000">На главную</a></h2>
+<h4 class="article-created-date"><a href="http://127.0.0.1:8000/new_profile/">Регистрация</a></h4>
+</div>
+<div class="archive">
+<div class="one-post">
+<h2>{{ post.title }}</h2>
+<div class="article-info">
+<div class="article-author">{{ post.author.username}}</div>
+<div class="article-created-date">{{ post.created_date}}</div>
+</div>
+<p class="article-text">{{ post.get_excerptfull }}</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
